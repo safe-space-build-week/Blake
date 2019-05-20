@@ -16,24 +16,23 @@ body {
   color: #333;
 
 }
-.top-bar {
+.nav-bar {
   width: 100%;
   display: flex;
   justify-content: center;
-  align-items: none;
+  align-items: baseline;
   flex-direction: row;
   position: fixed;
-  height: 44px;
+  height: 50px;
   background-color: #333;
 }
-.top-bar .container {
+.nav-bar .container {
   width: 100%;
   display: flex;
   justify-content: none;
   align-items: none;
   flex-direction: row;
   color: #fff;
-  letter-spacing: 1px;
   padding: 0 10px;
 }
 
@@ -57,45 +56,43 @@ a:active {
   color: green;
 }
 @media (min-width: 1280px) {
-  .top-bar .container {
+  .nav-bar .container {
     width: 1280px;
   }
 }
 
-.top-bar .container .container-left a {
-  cursor: pointer;
-  margin-right: 25%;
-  font-weight: bold;
+.nav-bar .container .container-left h2 {
+  width: 255px;
+  /* padding-right: 30%;  */
 }
-.top-bar .container .container-center {
+.nav-bar .container .container-center {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
   flex: 3;
   font-size: 12px;
-  margin-left: 20%;
+  /* padding-left: 20%; */
 }
-.top-bar .container .container-center a {
+.nav-bar .container .container-center a {
   cursor: pointer;
   margin-right: 5%;
+  text-align: center;
 }
-.top-bar .container .container-center a:last-child {
-  margin-right: 0;
-}
-.top-bar .container .container-center a:hover {
+
+.nav-bar .container .container-center a:hover {
   text-decoration: underline;
 }
-.top-bar .container .container-right {
+.nav-bar .container .container-right {
   display: flex;
   justify-content: flex-end;
   align-items: center;
   flex-direction: row;
   flex: 1;
-  font-size: 11px;
+  font-size: 12px;
   font-weight: bold;
 }
-.top-bar .container .container-right a {
+.nav-bar .container .container-right a {
   cursor: pointer;
 }
 .header {
@@ -104,7 +101,7 @@ a:active {
   align-items: center;
   flex-direction: row;
   width: 100%;
-  margin-top: 44px;
+  margin-nav: 44px;
   padding-bottom: 15px;
 }
 
@@ -134,12 +131,6 @@ a:active {
   text-align: center;
   color: #000;
 }
-/* .header span {
-  align-self: flex-end;
-  font-size: 11px;
-  font-weight: bold;
-  letter-spacing: 1px;
-} */
 
 .introduction {
   margin: 0 auto;
@@ -153,11 +144,6 @@ a:active {
   max-width: 100%;
 }
 
-@media (min-width: 700px) {
-  .intro-img {
-    display: none;
-  }
-}
 
 .tabs {
   border-bottom: 1px solid lightgrey;
@@ -213,7 +199,7 @@ a:active {
   align-items: none;
   flex-direction: row;
   width: 100%;
-  margin-top: 16px;
+  margin-nav: 16px;
   flex-wrap: wrap;
 }
 @media (min-width: 1200px) {
@@ -242,7 +228,7 @@ a:active {
   justify-content: none;
   align-items: center;
   flex-direction: row;
-  margin-top: 15px;
+  margin-nav: 15px;
 }
 .cards-container .card .author .img-container {
   padding-right: 10px;
