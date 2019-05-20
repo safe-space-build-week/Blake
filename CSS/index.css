@@ -5,6 +5,7 @@ html,
 body {
   margin: 0;
   padding: 0;
+  font-family: 'PT Sans', sans-serif;
 }
 body {
   display: flex;
@@ -13,7 +14,7 @@ body {
   flex-direction: column;
   background-color: #f1f1f1;
   color: #333;
-  font-family: 'PT Sans', sans-serif;
+
 }
 .top-bar {
   width: 100%;
@@ -35,13 +36,33 @@ body {
   letter-spacing: 1px;
   padding: 0 10px;
 }
+
+/* unvisited link */
+a:link {
+  color: green;
+}
+
+/* visited link */
+a:visited {
+  color: green;
+}
+
+/* mouse over link */
+a:hover {
+  color: white;
+}
+
+/* selected link */
+a:active {
+  color: green;
+}
 @media (min-width: 1280px) {
   .top-bar .container {
     width: 1280px;
   }
 }
 
-.top-bar .container .container-left span {
+.top-bar .container .container-left a {
   cursor: pointer;
   margin-right: 25%;
   font-weight: bold;
@@ -55,14 +76,14 @@ body {
   font-size: 12px;
   margin-left: 20%;
 }
-.top-bar .container .container-center span {
+.top-bar .container .container-center a {
   cursor: pointer;
   margin-right: 5%;
 }
-.top-bar .container .container-center span:last-child {
+.top-bar .container .container-center a:last-child {
   margin-right: 0;
 }
-.top-bar .container .container-center span:hover {
+.top-bar .container .container-center a:hover {
   text-decoration: underline;
 }
 .top-bar .container .container-right {
@@ -74,7 +95,7 @@ body {
   font-size: 11px;
   font-weight: bold;
 }
-.top-bar .container .container-right span {
+.top-bar .container .container-right a {
   cursor: pointer;
 }
 .header {
@@ -113,12 +134,12 @@ body {
   text-align: center;
   color: #000;
 }
-.header span {
+/* .header span {
   align-self: flex-end;
   font-size: 11px;
   font-weight: bold;
   letter-spacing: 1px;
-}
+} */
 
 .introduction {
   margin: 0 auto;
@@ -132,7 +153,7 @@ body {
   max-width: 100%;
 }
 
-@media (max-width: 500px) {
+@media (min-width: 700px) {
   .intro-img {
     display: none;
   }
