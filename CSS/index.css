@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico&display=swap');
+
 * {
   box-sizing: border-box;
 }
@@ -13,18 +15,37 @@ body {
   align-items: center;
   flex-direction: column;
   background-color: #f1f1f1;
-  /* color: #333; */
+
 
 }
+
+/* unvisited link */
+a:link {
+  color: black;
+}
+/* visited link */
+a:visited {
+  color: black;
+}
+/* mouse over link */
+a:hover {
+  color: black;
+}
+/* selected link */
+a:active {
+  color: black;
+}
+
+/* NAV BAR  */
 .nav-bar {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: baseline;
   flex-direction: row;
-  /* position: fixed; */
   height: 50px;
   background-color: #e1f0e1;
+  margin: 0 auto;
 }
 .nav-bar .container {
   width: 100%;
@@ -35,30 +56,10 @@ body {
   padding: 0 10px;
 }
 
-/* unvisited link */
-a:link {
-  color: black;
-}
-
-/* visited link */
-a:visited {
-  color: black;
-}
-
-/* mouse over link */
-a:hover {
-  color: black;
-}
-
-/* selected link */
-a:active {
-  color: black;
-}
-
-.nav-bar .container .container-left h2 {
+.logofont, .nav-bar .container .container-left h2 {
   font-family: 'Pacifico', cursive;  
-  width: 251px;
-  /* padding-right: 30%;  */
+  max-width: 251px;
+  font-weight: 400;
 }
 .nav-bar .container .container-center {
   display: flex;
@@ -67,7 +68,6 @@ a:active {
   flex-direction: row;
   flex: 3;
   font-size: 15px;
-  /* padding-left: 20%; */
 }
 .nav-bar .container .container-center a {
   cursor: pointer;
@@ -75,8 +75,9 @@ a:active {
   text-align: center;
 }
 
-.nav-bar .container .container-center a:hover {
-  text-decoration: underline;
+.nav-bar .container .container-center a {
+  text-decoration: none;
+  font-weight: bold;
 }
 .nav-bar .container .container-right {
   display: flex;
@@ -89,11 +90,14 @@ a:active {
 }
 .nav-bar .container .container-right a {
   cursor: pointer;
+  text-decoration: none;
 }
-
+/* NAV BAR MEDIA QUERIES */
 @media (min-width: 500px) {
   .nav-bar .container{
-    width: 500px;
+    max-width: 550px;
+    width: 98.4%;
+    margin: 0 auto;
   }
   .nav-bar .container .container-left h2 {
     width: 135px;
@@ -101,9 +105,9 @@ a:active {
     margin: 0;
   }
   .nav-bar .container .container-center {
-    width: 100px;
+    width: 150px;
     padding: 0;
-    margin: 0;
+    margin: 0 auto;
     flex: 2;
   }
   .nav-bar .container .container-right {
@@ -112,32 +116,20 @@ a:active {
     margin: 0;
   }
 }
-/* 
-  Working on the media below
-*/
-
-@media (min-width: 800px) {
+@media(min-width: 800px){
   .nav-bar .container {
-    width: 800;
+    margin: 0 auto; 
   }
-  .nav-bar .container .container-left h2{
-    width: 266px;
-    padding: 0;
-    margin: 0;
-  }
-  .nav-bar .container .container-center {
-    width: 266px;
-    padding: 0;
-    margin: 0;
-  }
-  .nav-bar .container .container-right {
-    width: 266px;
-    padding: 0;
-    margin: 0;
+}
+
+@media(min-width: 1000px){
+  .nav-bar .container {  
+    margin: 0 auto; 
   }
 }
 
 
+/* HEADER IMG */
 .header {
   display: flex;
   justify-content: space-between;
@@ -149,31 +141,20 @@ a:active {
 
 .header-img{
   display: block;
+  max-width: 70%;
   width: 100%;
   margin: 0 auto;
   height: 300px;
-  padding: 50px 0;
+  padding: 30px 0;
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1000px) {
   .header {
-    width: 1280px;
+    max-width: 1000px;
   }
-}
-@media(max-width: 500px){
-  .header-img {
-    display: none;
-  }
-}
-.header h1 {
-  font-size: 60px;
-  font-family: Didot, serif;
-  font-weight: bold;
-  flex: 8;
-  text-align: center;
-  color: #000;
 }
 
+/* INTRO AND CONTENT */
 .introduction {
   margin: 0 auto;
   width: 67.2%;
@@ -182,11 +163,23 @@ a:active {
   text-align: center;
 }
 
-.introduction p {
-  max-width: 100%;
+@media(min-width: 500px) {
+  .introduction {
+    max-width: 1000px;
+    width: 70%;
+  }
+  
+}
+@media(min-width: 1000px) {
+  .introduction p{
+    margin: 0 auto;
+    max-width: 700px;
+    /* width: 70%; */
+  }  
 }
 
 
+/* CARDS AND TABS */
 .tabs {
   border-bottom: 1px solid lightgrey;
   display: flex;
@@ -195,7 +188,6 @@ a:active {
   flex-direction: row;
   width: 100%;
   height: 47px;
-  /* background-color: #fff; */
   background-color: #e1f0e1;
 }
 @media (min-width: 1200px) {
