@@ -5,4 +5,4 @@ MVP: User can log in and set up a variety of reminders as to why they, themeselv
 
 Stretch Goal: Allow a 2nd user type to be able to log in and select your profile based on an invitation. They can Create, Read, Update and Delete messages to send you as a part of your daily reminder as to why you're amazing.
 
-Mobile: Instead of Twillio, use notifications to send these messages"         
+Mobile: Instead of Twillio, use notifications to send these messages"                 
