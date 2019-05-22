@@ -8,6 +8,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'PT Sans', sans-serif;
+  letter-spacing: 1px;
 }
 body {
   display: flex;
@@ -158,8 +159,6 @@ a:active {
 .introduction {
   margin: 0 auto;
   width: 67.2%;
-}
-.introduction h2{
   text-align: center;
 }
 
@@ -174,12 +173,10 @@ a:active {
   .introduction p{
     margin: 0 auto;
     max-width: 700px;
-    /* width: 70%; */
   }  
 }
 
-
-/* CARDS AND TABS */
+/* TABS AND CARDS */
 .tabs {
   border-bottom: 1px solid lightgrey;
   display: flex;
@@ -263,15 +260,9 @@ a:active {
   flex-direction: row;
 }
 .cards-container .card .author .img-container {
-  padding-right: 10px;
-  border-right: 1px solid lightgrey;
-  height: 100px;
+  margin: 0 auto;
 }
 .cards-container .card .author .img-container img {
-  width: 100px;
-}
-.cards-container .card .author span {
-  padding-left: 10px;
-  font-size: 1rem;
-  font-weight: bold;
+  height: 125px;
+  width: 150px;
 }
